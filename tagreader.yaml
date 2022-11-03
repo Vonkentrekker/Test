@@ -9,9 +9,6 @@ wifi:
 # Enable the captive portal for inital WiFi setup
 captive_portal:
 
-dashboard_import:
-  package_import_url: github://Vonktrekker/Test/tagreader.yaml
-
 improv_serial:
 
 
