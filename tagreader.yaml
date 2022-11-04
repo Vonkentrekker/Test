@@ -332,7 +332,7 @@ pn532_i2c:
     
 # Define the buzzer output
 output:
-- platform: esp32_pwm
+- platform: ledc
   pin: GPIO16
   id: buzzer
 
