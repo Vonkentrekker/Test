@@ -336,8 +336,8 @@ pn532_i2c:
 # Define the buzzer output
 output:
   - platform: ledc
-     pin: GPIO19
-     id: buzzer
+    pin: GPIO19
+    id: buzzer
 
 binary_sensor:
   - platform: status
