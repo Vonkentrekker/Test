@@ -21,8 +21,8 @@ substitutions:
 
 esphome:
   name: $name
-  platform: esp32
-  board: wemos_d1_mini32
+ # platform: esp32
+ # board: wemos_d1_mini32
 
   # Automatically add the mac address to the name
   # so you can use a single firmware for all devices
@@ -32,7 +32,7 @@ esphome:
   # configuration and updates.
   project:
     name: berkenb.tag_reader
-    version: "0.5"
+    version: "0.6"
 # If buzzer is enabled, notify on api connection success
   on_boot:
     priority: -10
