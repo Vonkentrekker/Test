@@ -21,7 +21,7 @@ substitutions:
 
 esphome:
   name: $name
-  platform: esp32
+ # platform: esp32
  # board: wemos_d1_mini32
 
   # Automatically add the mac address to the name
