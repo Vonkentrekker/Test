@@ -380,5 +380,5 @@ light:
   restore_mode: ALWAYS_OFF
 
 # Reset PN532
- pin_rst: GPIO6 
+ pin_rst: GPIO16 
  
