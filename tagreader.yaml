@@ -32,11 +32,14 @@ esphome:
   # configuration and updates.
   project:
     name: berkenb.tag_reader
-    version: "0.8"
+    version: "0.9"
 # If buzzer is enabled, notify on api connection success
   on_boot:
     priority: -10
     then:
+    - pin_rst: 0
+       delay: 100 
+    - pin_rst: 1
     - wait_until:
         api.connected:
     - logger.log: API is connected!
@@ -375,3 +378,7 @@ light:
   id: activity_led
   name: "${friendly_name} LED"
   restore_mode: ALWAYS_OFF
+
+# Reset PN532
+ pin_rst: GPIO6 
+ 
